@@ -61,7 +61,7 @@ if (!empty($groupByFieldset)) {
     $sublayout = 'section-byfieldsets';
 } else {
     foreach ($tmpl->getGroup('') as $field) {
-        $table_head .= '<th scope="col" style="width:45%">' . strip_tags($field->label);
+        $table_head .= '<th scope="col">' . strip_tags($field->label);
 
         if ($field->description) {
             $table_head .= '<span class="icon-info-circle" aria-hidden="true" tabindex="0"></span><div role="tooltip" id="tip-' . $field->id . '">' . Text::_($field->description) . '</div>';
